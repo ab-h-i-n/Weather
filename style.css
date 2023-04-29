@@ -62,9 +62,13 @@ body{
     place-content: center;
 }
 .col{
-    display: grid;
-    place-content: center;
-    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.col p{
+    font-size: 1.3rem;
 }
 .weather-icon{
     margin: 2.5rem 0px;
@@ -109,7 +113,7 @@ body{
   @media screen and (width < 625px) {
 
     .card{
-        max-width: 370px;
+        min-width: 370px;
     }
     .search input{
         width:80%;
@@ -129,15 +133,18 @@ body{
         justify-content: center;
         align-items: center;
     }
+    .col p{
+        font-size: 1rem;
+    }
     .col img{
         width: 50px;
     }
   }
 
-  @media screen and (width < 450px) {
+  @media screen and (width < 520px) {
 
     .card{
-        max-width: 300px;
+        min-width: 300px;
     }
     .search input{
         width:80%;
@@ -167,6 +174,7 @@ body{
         align-items: center;
         flex-direction: column;
         margin: 0px 10px;
+        gap:8px;
     }
     
     .text{
